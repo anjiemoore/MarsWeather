@@ -1,5 +1,38 @@
+$background-img: url(../images/mars.jpg);
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+body {
+    background-color: #000000;
+}
+
+.info {
+    background-image: $background-img;
+    height: 80vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: 100%;
+    position: relative;
+}
+
+.custom-shape-divider-bottom-1601280779 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 214px;
+    }
+    .shape-fill {
+        fill: #000000;
+    }
 }
