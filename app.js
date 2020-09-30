@@ -19,8 +19,10 @@ function getWeather() {
                 maxTemp: data.AT.mx,
                 solDate: new Date(data.First_UTC),
                 solSeason: data.Season,
-                solWind: data.HWS.av,
-                solWindDir: data.WD.most_common.compass_point
+                solWindSpeed: data.HWS.av,
+                solWindDir: data.WD.most_common.compass_point,
+                solSunrise: new Date(data.First_UTC),
+                solSunset: new Date(data.First_UTC)
             }
         })
     });
