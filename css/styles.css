@@ -1,2 +1,2 @@
-*,*::before,*::after{-webkit-box-sizing:border-box;box-sizing:border-box}:root{--fw-normal: 400;--fw-bold: 700;--fs-h1: 1.5rem;--fs-h2: 2.25rem;--fs-body: 1rem;--clr--white: #fff;--clr-dark: #444;--clr-accent: #D06D6D;--clr-accent-dark: #613131}
+*,*::before,*::after{-webkit-box-sizing:border-box;box-sizing:border-box}:root{--fw-normal: 400;--fw-bold: 700;--fs-h1: 1.5rem;--fs-h2: 2.25rem;--fs-body: 1rem;--clr--white: #fff;--clr-dark: #444;--clr-accent: #D06D6D;--clr-accent-dark: #613131}body{margin:0;font-family:'Montserrat', sans-serif;line-height:1.5;background-image:url(../images/mars.jpg);height:100vh;overflow:hidden;color:var(--clr--white)}
 /*# sourceMappingURL=styles.css.map */
