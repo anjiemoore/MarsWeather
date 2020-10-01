@@ -6,6 +6,7 @@
     }
     
      :root {
+        --fw-light: 300;
         --fw-normal: 400;
         --fw-bold: 700;
         --fs-h1: 1.5rem;
@@ -31,7 +32,7 @@
     body {
         margin: 0;
         font-family: 'Montserrat', sans-serif;
-        line-height: 1.5;
+        line-height: 1;
         background-image: $background-img;
         background-size: cover;
         height: 100vh;
@@ -39,6 +40,21 @@
         color: var(--clr--white);
     }
     
+    h1,
+    h2,
+    h3 {
+        line-height: 1;
+    }
+    
+    .main-title {
+        font-size: var(--fs-h1);
+        font-weight: var(--fw-light);
+        text-transform: uppercase;
+    }
+    
     .current-weather {
         background: rgba(0, 0, 0, .7);
+        padding: 2em;
+        max-width: 1000px;
+        margin: 4em 0 0 4em;
     }
