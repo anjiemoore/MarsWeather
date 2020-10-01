@@ -5,7 +5,7 @@
         box-sizing: border-box;
     }
     
-    :root {
+     :root {
         --fw-normal: 400;
         --fw-bold: 700;
         --fs-h1: 1.5rem;
@@ -17,12 +17,28 @@
         --clr-accent-dark: #613131;
     }
     
+    //Hiding screen reader from DOM
+    .sr-only:not(:focus):not(:active) {
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+    }
+    
     body {
         margin: 0;
         font-family: 'Montserrat', sans-serif;
         line-height: 1.5;
         background-image: $background-img;
+        background-size: cover;
         height: 100vh;
         overflow: hidden;
         color: var(--clr--white);
+    }
+    
+    .current-weather {
+        background: rgba(0, 0, 0, .7);
     }
