@@ -47,12 +47,20 @@
         line-height: 1;
     }
     
+    a {
+        color: var(--clr-accent);
+        &:hover {
+            color: var(--clr-accent-dark);
+        }
+    }
+    
     .main-title {
         font-size: var(--fs-h1);
         font-weight: var(--fw-light);
         color: var(--clr-accent);
         text-transform: uppercase;
         letter-spacing: 2.5px;
+        grid-column: 1 / -1;
     }
     
     .section-title {
@@ -70,4 +78,10 @@
         padding: 2em;
         max-width: 1000px;
         margin: 4em 0 0 4em;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .info {
+        grid-column: 1 / 4;
     }
