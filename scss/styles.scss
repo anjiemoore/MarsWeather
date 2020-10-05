@@ -11,6 +11,7 @@
         --fw-bold: 700;
         --fs-h1: 1.5rem;
         --fs-h2: 2.25rem;
+        --fs-large: 3.5rem;
         --fs-body: 1rem;
         --clr--white: #fff;
         --clr-dark: #444;
@@ -49,7 +50,19 @@
     .main-title {
         font-size: var(--fs-h1);
         font-weight: var(--fw-light);
+        color: var(--clr-accent);
         text-transform: uppercase;
+        letter-spacing: 2.5px;
+    }
+    
+    .section-title {
+        font-size: var(--fs-h2);
+        font-weight: var(--fw-bold);
+        margin: 0;
+    }
+    
+    .sol-date {
+        font-size: var(--fs-large);
     }
     
     .current-weather {
