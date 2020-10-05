@@ -14,6 +14,7 @@
         --fs-large: 3.5rem;
         --fs-body: 1rem;
         --clr--white: #fff;
+        --clr--grey: #989898;
         --clr-dark: #444;
         --clr-accent: #D06D6D;
         --clr-accent-dark: #613131;
@@ -69,6 +70,13 @@
         margin: 0;
     }
     
+    .reading {
+        font-size: var(--fs-h1);
+        margin: 0;
+        color: var(--clr--grey);
+        line-height: 0;
+    }
+    
     .sol-date {
         font-size: var(--fs-large);
     }
@@ -80,6 +88,23 @@
         margin: 4em 0 0 4em;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2em;
+    }
+    
+    .date {
+        grid-column: 1 / 2;
+        &__day {
+            font-size: var(--fs-h2);
+            margin: 0;
+        }
+    }
+    
+    .temp {
+        grid-column: 2 / 3;
+    }
+    
+    .wind {
+        grid-column: 3 / 4;
     }
     
     .info {
