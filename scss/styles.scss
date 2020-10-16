@@ -11,10 +11,11 @@
         --fw-bold: 700;
         --fs-h1: 1.5rem;
         --fs-h2: 2.25rem;
+        --fs-sm: 1.3rem;
         --fs-large: 3.5rem;
         --fs-body: 1rem;
-        --clr--white: #fff;
-        --clr--grey: #989898;
+        --clr-white: #fff;
+        --clr-grey: #989898;
         --clr-dark: #444;
         --clr-accent: #D06D6D;
         --clr-accent-dark: #613131;
@@ -39,7 +40,7 @@
         background-size: cover;
         height: 100vh;
         overflow: hidden;
-        color: var(--clr--white);
+        color: var(--clr-white);
     }
     
     h1,
@@ -71,10 +72,10 @@
     }
     
     .reading {
-        font-size: var(--fs-h1);
+        font-size: var(--fs-sm);
         margin: 0;
         color: var(--clr--grey);
-        line-height: 0;
+        line-height: 0.3;
     }
     
     .sol-date {
@@ -85,7 +86,7 @@
         background: rgba(0, 0, 0, .7);
         padding: 2em;
         max-width: 1000px;
-        margin: 4em 0 0 4em;
+        margin: auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 2em;
@@ -96,11 +97,16 @@
         &__day {
             font-size: var(--fs-h2);
             margin: 0;
+            font-weight: var(--fw-light);
         }
     }
     
     .temp {
+        --border: solid .3em var(--clr-accent-dark);
         grid-column: 2 / 3;
+        border-left: var(--border);
+        border-right: var(--border);
+        padding: 0 2em;
     }
     
     .wind {
@@ -109,4 +115,17 @@
     
     .info {
         grid-column: 1 / 4;
+    }
+    
+    .prev-weather {
+        background: var(--clr-white);
+        color: var(--clr-dark);
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        transform: translateY(60%);
+    }
+    
+    .prev-days {
+        display: flex;
     }
